@@ -31,8 +31,9 @@ while True:
   a=a+random.gauss(0, 2*rate_of_correction)
   print ("The tilt is")
   print (a)
-  x=float(input("Enter the tilt correction (Enter 0 to end the flight): "))
-  if x==0 :
+  x=float(input("Enter the tilt correction (Enter 100 to end the flight): "))
+  if x==100 :
+    print("Samolot wylądował")
     break
   a=a+x
   print ("The tilt after correction is:")
