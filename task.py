@@ -38,7 +38,7 @@ while True:
   a=a+x
   print ("The tilt after correction is:")
   print (a)
-  if a>4*rate_of_correction :
+  if abs(a)>4*rate_of_correction :
     print ("Too much turbulence, the plane has crashed")
     break
   print ("Next step")
