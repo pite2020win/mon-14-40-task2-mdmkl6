@@ -22,3 +22,23 @@
 #Delete these comments before commit!
 #
 #Good luck.
+
+import random
+
+rate_of_correction=5
+a=0
+while True:
+  a=a+random.gauss(0, 2*rate_of_correction)
+  print ("The tilt is")
+  print (a)
+  x=float(input("Enter the tilt correction (Enter 0 to end the flight): "))
+  if x==0 :
+    break
+  a=a+x
+  print ("The tilt after correction is:")
+  print (a)
+  if a>4*rate_of_correction :
+    print ("Too much turbulence, the plane has crashed")
+    break
+  print ("Next step")
+
